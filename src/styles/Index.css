@@ -8,8 +8,23 @@
     border: solid 5px black;
 }
 
+.index-back {
+    position: fixed;
+    top:1rem;
+    right:2rem;
+    font-size: 30px;
+}
+
+.index-webcam {
+    border: solid 5px black;
+}
+
 .index-bg {
     background: #f8d176 !important;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

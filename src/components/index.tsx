@@ -71,26 +71,27 @@ export default function App() {
 
     return (
         <div className="index-bg">
-            
-        <div className="index-bg">
-            {/* <h1>Process: ({forge.state})</h1> */}
-            <a href='\' className="index-back"> 
-                Back
-             </a>
-            <Webcam className="index-webcam"
-                audio={false}
-                height={videoConstraints.height}
-                width={videoConstraints.width}
-                ref={webcamRef}
-                screenshotFormat="image/jpeg"
-                videoConstraints={videoConstraints}
-                onTimeUpdate={onTimeUpdated}
-            />
-            <ul>{predictions}</ul>
-        </div>
-        
-            
-             
+
+            <div className="index-bg">
+                <h1>Ingredient Detection</h1>
+                {/* <h1>Process: ({forge.state})</h1> */}
+                <a href='\' className="index-back">
+                    Back
+                </a>
+                <Webcam className="index-webcam"
+                    audio={false}
+                    height={videoConstraints.height}
+                    width={videoConstraints.width}
+                    ref={webcamRef}
+                    screenshotFormat="image/jpeg"
+                    videoConstraints={videoConstraints}
+                    onTimeUpdate={onTimeUpdated}
+                />
+                <ul>{predictions}</ul>
+            </div>
+
+
+
         </div>
     );
 }
